@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 require('dotenv').config();
 
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/jsdriplocal";
-
+const log = require("./routes/api/log");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useFindAndModify: false });
 
-// Define API routes here
+app.use("/api/log", log);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));

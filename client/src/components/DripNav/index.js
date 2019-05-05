@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, Form, FormControl, NavDropdown, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 class DripNav extends Component {
 
@@ -7,24 +7,24 @@ class DripNav extends Component {
 
         return (
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">JSDrip</Navbar.Brand>
+                <Navbar.Brand href="/">JSDrip</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/about">About</Nav.Link>
+                        <Nav.Link href="/log">Guest Log</Nav.Link>
+                        <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+                        <NavDropdown title="More" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="https://github.com/VivaMango" target="_blank">Alex on GitHub</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.linkedin.com/in/alex-schwartz-05409790/" target="_blank">Alex on LinkedIn</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.3" target="_blank">Alex on Twitter</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="../../download/alex_schwartz_resume.pdf" target="_blank" download>Download Alex's Resume</NavDropdown.Item> 
                         </NavDropdown>
                     </Nav>
-                    <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
-                    </Form>
                 </Navbar.Collapse>
             </Navbar>
         );

@@ -2,6 +2,8 @@ import axios from "axios";
 
 export default {
 
-    //TODO: API Routes
+    createLog: function(entry) {
+        return axios.post("/api/log/createlog", entry);
+    }
 
 };
