@@ -15,12 +15,13 @@ class DripNav extends Component {
                         <Nav.Link href="/about">About</Nav.Link>
                         <Nav.Link href="/log">Guest Log</Nav.Link>
                         <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-                        <NavDropdown title="More" id="basic-nav-dropdown">
+                        <Nav.Link href="/blog">Blog</Nav.Link>
+                        <NavDropdown title="More Info" id="basic-nav-dropdown">
                             <NavDropdown.Item href="https://github.com/VivaMango" target="_blank">Alex on GitHub</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="https://www.linkedin.com/in/alex-schwartz-05409790/" target="_blank">Alex on LinkedIn</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3" target="_blank">Alex on Twitter</NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.youtube.com/channel/UCxVHCnBXwA2E1d_zHWB52eg" target="_blank">Alex on YouTube</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="../../download/alex_schwartz_resume.pdf" target="_blank" download>Download Alex's Resume</NavDropdown.Item> 
                         </NavDropdown>

@@ -18,6 +18,6 @@ const LogSchema = new Schema({
 
 LogSchema.plugin(uniqueValidator);
 
-const Log = mongoose.model("Log" , LogSchema);
+const Log = mongoose.model("log" , LogSchema);
 
 module.exports = Log;

@@ -14,6 +14,7 @@ import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
 import LogPage from "./pages/LogPage";
 import PortfolioPage from "./pages/PortfolioPage";
+import BlogPage from "./pages/BlogPage";
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/log" component={LogPage} />
           <Route exact path="/portfolio" component={PortfolioPage} />
+          <Route exact path="/blog" component={BlogPage} />
           </Switch>
         </Container>
       </Router>
